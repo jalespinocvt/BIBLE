@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleBtn = document.getElementById('toggleDesign');
-    const verseCard = document.getElementById('verseCard');
+    const container = document.querySelector('.container');
     const designElements = document.getElementById('designElements');
     let isDesigned = false;
 
@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
         isDesigned = !isDesigned;
         
         if (isDesigned) {
-            verseCard.parentElement.classList.add('design-active');
+            container.classList.add('design-active');
             toggleBtn.textContent = 'Remove Design';
         } else {
-            verseCard.parentElement.classList.remove('design-active');
+            container.classList.remove('design-active');
             toggleBtn.textContent = 'Add Design';
         }
     });
