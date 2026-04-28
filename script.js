@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleBtn = document.getElementById('toggleDesign');
-    const container = document.querySelector('.container');
-    const designElements = document.getElementById('designElements');
+    const verseWrapper = document.querySelector('.verse-wrapper');
     let isDesigned = false;
 
     toggleBtn.addEventListener('click', function() {
         isDesigned = !isDesigned;
         
         if (isDesigned) {
-            container.classList.add('design-active');
+            verseWrapper.classList.add('design-active');
             toggleBtn.textContent = 'Remove Design';
         } else {
-            container.classList.remove('design-active');
+            verseWrapper.classList.remove('design-active');
             toggleBtn.textContent = 'Add Design';
         }
     });
@@ -24,5 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    console.log('Bible Verse loaded. Press SPACEBAR to toggle design.');
+    console.log('✅ Bible Verse loaded! Click button or press SPACEBAR to toggle.');
 });
