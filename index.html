@@ -5,45 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bible Verse</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1>Bible Verse</h1>
-        </header>
+    <style>
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <!-- Controls -->
-        <div class="controls">
-            <button id="toggleDesign" class="toggle-btn">
-                Add Design
-            </button>
-        </div>
-
-        <!-- Verse Card Wrapper -->
-        <div class="verse-wrapper">
-            <!-- Design Elements -->
-            <div id="designElements" class="design-elements">
-                <div class="frame"></div>
-                <div class="glow"></div>
-                <div class="decor left"></div>
-                <div class="decor right"></div>
-            </div>
-
-            <!-- Verse Card -->
-            <div class="verse-card" id="verseCard">
-                <div class="verse-content">
-                    <p class="verse-text">
-                        For God so loved the world, that he gave his only begotten Son, 
-                        that whosoever believeth in him should not perish, but have everlasting life.
-                    </p>
-                    <div class="verse-reference">John 3:16</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    min-height: 100vh;
+    line-height: 1.6;
+    color:
