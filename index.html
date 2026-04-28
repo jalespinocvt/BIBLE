@@ -3,78 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bible Verse Design Generator</title>
+    <title>Bible Verse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Eb+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- Header Section -->
+        <!-- Header -->
         <header class="header">
-            <div class="cross-icon">✝</div>
-            <h1 class="main-title">Bible Verse Design</h1>
-            <p class="subtitle">"Thy word is a lamp unto my feet, and a light unto my path" - Psalm 119:105</p>
+            <h1>Bible Verse</h1>
         </header>
 
-        <!-- Controls Section -->
+        <!-- Controls -->
         <div class="controls">
-            <button id="addDesignBtn" class="control-btn primary-btn">
-                <span class="btn-icon">✨</span>
+            <button id="toggleDesign" class="toggle-btn">
                 Add Design
             </button>
-            <button id="removeDesignBtn" class="control-btn secondary-btn" style="display: none;">
-                <span class="btn-icon">❌</span>
-                Remove Design
-            </button>
         </div>
 
-        <!-- Bible Verse Display -->
-        <div class="verse-container">
-            <div id="verseCard" class="verse-card">
-                <div class="verse-content">
-                    <h2 class="verse-text" id="verseText">
-                        For God so loved the world, that he gave his only begotten Son, 
-                        that whosoever believeth in him should not perish, but have everlasting life.
-                    </h2>
-                    <div class="verse-reference">
-                        <span class="reference">John 3:16</span>
-                    </div>
-                </div>
+        <!-- Verse Card -->
+        <div class="verse-card" id="verseCard">
+            <div class="verse-content">
+                <p class="verse-text">
+                    For God so loved the world, that he gave his only begotten Son, 
+                    that whosoever believeth in him should not perish, but have everlasting life.
+                </p>
+                <div class="verse-reference">John 3:16</div>
             </div>
         </div>
 
-        <!-- Design Elements Container -->
-        <div id="designElements" class="design-elements" style="display: none;">
-            <!-- Ornamental Frame -->
-            <div class="ornamental-frame">
-                <div class="frame-top"></div>
-                <div class="frame-bottom"></div>
-                <div class="frame-left"></div>
-                <div class="frame-right"></div>
-                <div class="frame-corners">
-                    <div class="corner top-left"></div>
-                    <div class="corner top-right"></div>
-                    <div class="corner bottom-left"></div>
-                    <div class="corner bottom-right"></div>
-                </div>
-            </div>
-
-            <!-- Vine Decorations -->
-            <div class="vine-decoration left-vine"></div>
-            <div class="vine-decoration right-vine"></div>
-
-            <!-- Glow Effect -->
-            <div class="holy-glow"></div>
-
-            <!-- Dove Symbol -->
-            <div class="dove-symbol">🕊️</div>
-
-            <!-- Crown of Thorns -->
-            <div class="crown-thorns">👑</div>
+        <!-- Design Elements -->
+        <div id="designElements" class="design-elements">
+            <div class="frame"></div>
+            <div class="glow"></div>
+            <div class="decor left"></div>
+            <div class="decor right"></div>
         </div>
-
-        <!-- Floating Particles -->
-        <div id="particles" class="particles"></div>
     </div>
 
     <script src="script.js"></script>
